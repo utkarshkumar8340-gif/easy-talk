@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>EasyTalk-Spoken | English Coaching by Kundan Kumar | Jehanabad, Bihar</title>
+<meta name="description" content="Learn spoken English with confidence at EasyTalk-Spoken, Jehanabad. Basic & Advanced courses by Kundan Kumar. Take the free admission test today!"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--orange:#FF6B35;--yellow:#FFD93D;--green:#6BCB77;--blue:#4D96FF;--purple:#845EC2;--dark:#1a1a2e;}
+body{font-family:'Segoe UI',sans-serif;background:#fff;color:#222;}
+nav{background:var(--dark);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:999;}
+.logo{color:var(--yellow);font-size:1.5rem;font-weight:800;}
+.logo span{color:var(--orange);}
+.nav-links a{color:#fff;text-decoration:none;margin-left:20px;font-weight:600;}
+.nav-links a:hover{color:var(--yellow);}
+
+@keyframes drift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero{background:linear-gradient(120deg,#845EC2,#FF6B35,#FFD93D,#4D96FF);background-size:300% 300%;animation:drift 12s ease infinite;min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;position:relative;overflow:hidden;}
+.hero-content{position:relative;z-index:1;max-width:700px;}
+.badge{display:inline-block;background:var(--yellow);color:var(--dark);padding:6px 18px;border-radius:50px;font-weight:700;font-size:.85rem;margin-bottom:15px;}
+.hero h1{font-size:3rem;color:#fff;font-weight:900;text-shadow:2px 2px 8px rgba(0,0,0,.3);line-height:1.2;}
+.hero h1 span{color:var(--yellow);}
+.hero p{color:#fff;font-size:1.15rem;margin:20px auto;text-shadow:1px 1px 4px rgba(0,0,0,.2);}
+.btn{padding:14px 32px;border-radius:50px;font-size:1rem;font-weight:700;cursor:pointer;border:none;transition:.3s;text-decoration:none;display:inline-block;}
+.btn-primary{background:var(--dark);color:var(--yellow);}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.3);}
+.btn-outline{background:transparent;color:#fff;border:2px solid #fff;}
+.btn-outline:hover{background:#fff;color:var(--dark);}
+.hero-btns{margin-top:28px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap;}
+
+.stats{background:var(--dark);padding:35px 20px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
+.stat{text-align:center;}
+.stat h3{font-size:2rem;color:var(--yellow);font-weight:900;}
+.stat p{color:#aaa;font-size:.85rem;}
+
+.section{padding:65px 20px;text-align:center;}
+.section h2{font-size:2.1rem;font-weight:800;margin-bottom:8px;}
+.section .sub{color:#666;margin-bottom:35px;font-size:1rem;max-width:600px;margin-left:auto;margin-right:auto;}
+.underline{width:60px;height:4px;border-radius:4px;margin:8px auto 25px;}
+
+.about-grid{max-width:750px;margin:0 auto;text-align:left;background:#fafafa;border-radius:20px;padding:35px;box-shadow:0 8px 30px rgba(0,0,0,.06);}
+.about-grid p{color:#444;line-height:1.7;margin-bottom:14px;font-size:1rem;}
+.about-grid strong{color:var(--orange);}
+
+.courses-grid{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;max-width:900px;margin:0 auto;}
+.course-card{background:#fff;border-radius:20px;padding:35px 28px;width:270px;box-shadow:0 10px 40px rgba(0,0,0,.1);position:relative;transition:.3s;}
+.course-card:hover{transform:translateY(-8px);}
+.course-card.basic{border-top:6px solid var(--blue);}
+.course-card.advanced{border-top:6px solid var(--orange);}
+.tag{position:absolute;top:15px;right:15px;padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700;color:#fff;}
+.basic .tag{background:var(--blue);}
+.advanced .tag{background:var(--orange);}
+.course-card h3{font-size:1.3rem;font-weight:800;margin:10px 0 6px;}
+.course-card .price{font-size:1.9rem;font-weight:900;margin:12px 0;}
+.basic .price{color:var(--blue);}
+.advanced .price{color:var(--orange);}
+.duration{background:#f5f5f5;border-radius:10px;padding:7px 14px;display:inline-block;font-size:.85rem;color:#555;margin-bottom:16px;}
+.course-features{list-style:none;text-align:left;margin-bottom:10px;}
+.course-features li{padding:5px 0;color:#444;font-size:.9rem;}
+.course-features li::before{content:'✓ ';color:var(--green);font-weight:700;}
+
+.cta-panel{background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:24px;max-width:650px;margin:40px auto 0;padding:40px 30px;color:#fff;}
+.cta-panel h3{font-size:1.5rem;font-weight:800;margin-bottom:10px;}
+.cta-panel p{color:#ccc;margin-bottom:20px;}
+
+/* PANELS shown one at a time */
+.panel{display:none;max-width:650px;margin:0 auto;background:#fff;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.1);padding:35px 30px;text-align:left;}
+.panel.active{display:block;}
+.panel h2{text-align:center;font-size:1.6rem;font-weight:800;margin-bottom:6px;}
+.panel .sub{text-align:center;color:#666;margin-bottom:20px;font-size:.9rem;}
+
+.q-block{border:1px solid #eee;border-radius:14px;padding:16px;margin-bottom:14px;}
+.q-block p.qtext{font-weight:700;margin-bottom:10px;}
+.opt-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.opt-btn{border:1.5px solid #ddd;border-radius:10px;padding:9px 12px;text-align:left;font-size:.9rem;background:#fff;cursor:pointer;}
+.opt-btn.selected{border-color:var(--orange);background:#fff3ec;font-weight:700;}
+#testProgress{text-align:center;font-weight:700;color:var(--orange);margin-bottom:14px;}
+
+.form-group{margin-bottom:15px;}
+.form-group label{display:block;font-size:.85rem;font-weight:600;color:#555;margin-bottom:6px;}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:2px solid #eee;border-radius:10px;font-size:.95rem;outline:none;font-family:inherit;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--orange);}
+.form-row{display:flex;gap:12px;}
+.form-row .form-group{flex:1;}
+.submit-btn{width:100%;padding:14px;background:linear-gradient(135deg,var(--orange),var(--purple));color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:700;cursor:pointer;}
+.submit-btn.big-green{background:linear-gradient(135deg,#2ecc71,#27ae60);}
+#formMsg{margin-top:10px;font-size:.88rem;text-align:center;font-weight:600;}
+.privacy-note{font-size:.78rem;color:#888;margin-top:12px;text-align:center;line-height:1.4;}
+
+.result-icon{font-size:3.5rem;text-align:center;margin-bottom:10px;}
+.result-title{text-align:center;font-size:1.5rem;font-weight:800;margin-bottom:8px;}
+.result-sub{text-align:center;color:#666;margin-bottom:20px;}
+
+.contact-section{background:linear-gradient(135deg,#1a1a2e,#16213e);padding:60px 20px;text-align:center;}
+.contact-section h2{color:#fff;font-size:1.9rem;font-weight:800;margin-bottom:20px;}
+.info-item{display:flex;align-items:center;gap:10px;justify-content:center;color:#ddd;margin-bottom:10px;font-size:.95rem;}
+.info-item i{color:var(--orange);width:18px;}
+
+footer{background:#111;color:#aaa;text-align:center;padding:22px;font-size:.9rem;}
+footer span{color:var(--yellow);}
+
+@keyframes fallDown{ from{ top:-40px; } to{ top:100%; } }
+.flying-word{position:absolute;top:-40px;padding:8px 16px;border-radius:12px;background:#fff;border:2px solid var(--green);font-weight:700;box-shadow:0 4px 10px rgba(0,0,0,.1);animation-name:fallDown;animation-timing-function:linear;user-select:none;pointer-events:none;}
+
+@media(max-width:600px){
+  .hero h1{font-size:2rem;}
+  .nav-links{display:none;}
+  .opt-row{grid-template-columns:1fr;}
+  .form-row{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">EasyTalk<span>-Spoken</span></div>
+  <div class="nav-links">
+    <a href="#courses">Courses</a>
+    <a href="#practice">Practice</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HOME VIEW -->
+<div id="homeView">
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">🎯 #1 English Spoken Coaching in Jehanabad</div>
+      <h1>Speak English<br/><span>With Confidence!</span></h1>
+      <p>Join EasyTalk-Spoken and transform your English speaking skills with expert guidance from Kundan Kumar.</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary" onclick="startTest()">Take Free Admission Test →</button>
+        <a href="#courses" class="btn btn-outline">View Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><h3>500+</h3><p>Students Trained</p></div>
+    <div class="stat"><h3>5★</h3><p>Rating</p></div>
+    <div class="stat"><h3>3+</h3><p>Years Experience</p></div>
+    <div class="stat"><h3>2</h3><p>Expert Courses</p></div>
+  </div>
+
+  <section class="section" id="about">
+    <h2>About <span style="color:var(--orange)">EasyTalk-Spoken</span></h2>
+    <div class="underline" style="background:linear-gradient(to right,var(--orange),var(--purple))"></div>
+    <div class="about-grid">
+      <p>EasyTalk-Spoken is a personal English coaching institute run by <strong>Kundan Kumar</strong> in Jehanabad, Bihar. We help students, job-seekers, and working professionals build real spoken English confidence — not just bookish grammar.</p>
+      <p>Over <strong>3+ years</strong>, we've trained <strong>500+ students</strong> through small batches, daily speaking practice, and personal attention — earning a <strong>5-star</strong> reputation in the local community.</p>
+      <p>Whether your goal is a better job, cracking an interview, or simply speaking fluently in daily life — we have a course built for you.</p>
+    </div>
+  </section>
+
+  <section class="section" id="courses">
+    <h2>Our <span style="color:var(--orange)">Courses</span></h2>
+    <div class="underline" style="background:linear-gradient(to right,var(--orange),var(--purple))"></div>
+    <p class="sub">Choose the course that fits your level. Enrollment is confirmed only after passing our short admission test.</p>
+    <div class="courses-grid">
+      <div class="course-card basic">
+        <span class="tag">Beginner</span>
+        <h3>📘 Basic Course</h3>
+        <div class="duration">⏱ Duration: 5 Months</div>
+        <div class="price">₹1,500</div>
+        <ul class="course-features">
+          <li>English Grammar Basics</li>
+          <li>Daily Conversation Practice</li>
+          <li>Pronunciation Training</li>
+          <li>Vocabulary Building</li>
+          <li>Personal Attention</li>
+        </ul>
+      </div>
+      <div class="course-card advanced">
+        <span class="tag">Advanced</span>
+        <h3>🚀 Advanced Course</h3>
+        <div class="duration">⏱ Duration: 3 Months</div>
+        <div class="price">₹1,000</div>
+        <ul class="course-features">
+          <li>Fluency & Confidence Building</li>
+          <li>Interview Preparation</li>
+          <li>Public Speaking Skills</li>
+          <li>Advanced Grammar</li>
+          <li>Group Discussion Practice</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta-panel">
+      <h3>Ready to join?</h3>
+      <p>Take our quick 30-question admission test (score 16/30 to pass), then fill your details to confirm your seat.</p>
+      <button class="btn btn-primary" onclick="startTest()">Take Admission Test →</button>
+    </div>
+  </section>
+
+  <section class="section" id="practice">
+    <h2>Practice &amp; <span style="color:var(--orange)">Play</span></h2>
+    <div class="underline" style="background:linear-gradient(to right,var(--orange),var(--purple))"></div>
+    <p class="sub">Free tools to sharpen your English — no admission needed.</p>
+    <div class="courses-grid">
+      <div class="course-card basic">
+        <h3>🎮 English Games</h3>
+        <p style="color:#555;font-size:.9rem;margin-bottom:16px;">Quick quiz + fill-in-the-blank word games. Instant feedback, play as many times as you like.</p>
+        <button class="btn btn-primary" style="width:100%;" onclick="goTo('gameSection')">Play Now</button>
+      </div>
+      <div class="course-card advanced">
+        <h3>🎙️ AI Speaking Partner</h3>
+        <p style="color:#555;font-size:.9rem;margin-bottom:16px;">Practice talking out loud — Debate, Interview, or Casual Conversation with a voice partner.</p>
+        <button class="btn btn-primary" style="width:100%;" onclick="goTo('aiSection')">Start Talking</button>
+      </div>
+      <div class="course-card basic" style="border-top-color:var(--green);">
+        <h3>🪄 Word Catch</h3>
+        <p style="color:#555;font-size:.9rem;margin-bottom:16px;">Words fly across the screen — type the correct one to fill the blank before it's too late! Survival mode, gets faster each round.</p>
+        <button class="btn btn-primary" style="width:100%;background:var(--green);color:#fff;" onclick="goTo('catchSection'); startCatchGame();">Play Word Catch</button>
+      </div>
+      <div class="course-card advanced" style="border-top-color:#2e7d32;">
+        <h3>🏃 Forest Run</h3>
+        <p style="color:#555;font-size:.9rem;margin-bottom:16px;">A 3D runner through a forest path! Type the full sentence shown before time runs out. 3 hearts - don't stumble!</p>
+        <button class="btn btn-primary" style="width:100%;background:#2e7d32;color:#fff;" onclick="goTo('runSection'); startRunGame();">Start Running</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="info-item"><i class="fas fa-user"></i> Kundan Kumar</div>
+    <div class="info-item"><i class="fas fa-phone"></i> +91 6204877079</div>
+    <div class="info-item"><i class="fas fa-envelope"></i> kundanmarch16@gmail.com</div>
+    <div class="info-item"><i class="fas fa-map-marker-alt"></i> Jehanabad, Bihar, India</div>
+    <div class="info-item"><i class="fas fa-clock"></i> Mon–Sat: 9AM – 7PM</div>
+  </section>
+</div>
+
+<!-- TEST SECTION -->
+<div class="panel" id="testSection">
+  <h2>Admission Test</h2>
+  <p class="sub">30 simple questions. Score 16/30 to pass and unlock enrollment.</p>
+  <div id="testProgress">0/30 answered</div>
+  <div id="questionsWrap"></div>
+  <button class="submit-btn" onclick="submitTest()">Submit Test & Check Marks</button>
+</div>
+
+<!-- RESULT SECTION -->
+<div class="panel" id="resultSection">
+  <div class="result-icon" id="resultIcon">🎉</div>
+  <div class="result-title" id="resultTitle">Congratulations!</div>
+  <div class="result-sub" id="resultSub">You scored ...</div>
+  <button class="submit-btn" id="resultBtn" onclick="handleResultBtn()">Continue</button>
+</div>
+
+<!-- ENQUIRY FORM SECTION (after passing) -->
+<div class="panel" id="formSection">
+  <h2>You Passed! 🎉 Confirm Your Seat</h2>
+  <p class="sub">Fill this in — Kundan Kumar will contact you directly.</p>
+
+  <div class="form-row">
+    <div class="form-group"><label>Full Name *</label><input type="text" id="fname" placeholder="Your full name"/></div>
+    <div class="form-group"><label>Age</label><input type="number" id="fage" min="10" max="60" placeholder="e.g. 18"/></div>
+  </div>
+  <div class="form-row">
+    <div class="form-group"><label>Phone Number *</label><input type="tel" id="fphone" placeholder="+91 XXXXXXXXXX"/></div>
+    <div class="form-group"><label>Email (optional)</label><input type="email" id="femail" placeholder="you@email.com"/></div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>Gender</label>
+      <select id="fgender"><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select>
+    </div>
+    <div class="form-group">
+      <label>Course *</label>
+      <select id="fcourse">
+        <option value="">Select a course</option>
+        <option>Basic Course – ₹1,500 (5 Months)</option>
+        <option>Advanced Course – ₹1,000 (3 Months)</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>Preferred Batch Time</label>
+      <select id="fbatch">
+        <option value="">Select timing</option>
+        <option>Morning (7AM – 10AM)</option>
+        <option>Afternoon (12PM – 3PM)</option>
+        <option>Evening (5PM – 8PM)</option>
+        <option>Flexible / Any</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Purpose</label>
+      <select id="fpurpose">
+        <option value="">Select purpose</option>
+        <option>Job / Career Growth</option>
+        <option>Interview Preparation</option>
+        <option>Daily Fluency</option>
+        <option>Competitive Exams</option>
+        <option>Business Communication</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group"><label>Your Ambition / Goal (optional)</label><input type="text" id="fambition" placeholder="e.g. Get a call-center job"/></div>
+  <div class="form-group"><label>Anything else?</label><textarea id="fmsg" rows="3" placeholder="Message or question"></textarea></div>
+  <label style="display:flex;gap:8px;align-items:flex-start;font-size:.85rem;color:#555;margin-bottom:16px;">
+    <input type="checkbox" id="fconsent" style="width:auto;margin-top:3px;"/>
+    I agree my details will be used only for admission at EasyTalk-Spoken and kept private. *
+  </label>
+
+  <input type="text" id="fwebsite" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
+
+  <button class="submit-btn big-green" onclick="submitForm()">Confirm My Admission 🚀</button>
+  <div id="formMsg"></div>
+  <p class="privacy-note">🔒 Your information is sent securely to Kundan Kumar and never shared with third parties.</p>
+</div>
+
+<!-- THANK YOU SECTION -->
+<div class="panel" id="thankYouSection">
+  <div class="result-icon">✅</div>
+  <div class="result-title">You're In!</div>
+  <div class="result-sub" id="thankYouSub">We've received your details. Redirecting home...</div>
+</div>
+
+<!-- GAME SECTION -->
+<div class="panel" id="gameSection">
+  <h2>English Games 🎮</h2>
+  <p class="sub">Pick a game — play as many rounds as you like.</p>
+  <div style="display:flex;gap:10px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;">
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="startQuizGame()">🧠 Quick Quiz</button>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="startFillGame()">✏️ Fill in the Blank</button>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="goTo('homeView')">← Back Home</button>
+  </div>
+  <div id="gameScoreLine" style="text-align:center;font-weight:700;color:var(--orange);margin-bottom:12px;"></div>
+  <div id="gameWrap"></div>
+</div>
+
+<!-- AI SPEAKING SECTION -->
+<div class="panel" id="aiSection">
+  <h2>AI Speaking Partner 🎙️</h2>
+  <p class="sub">Choose a topic, tap Start, and talk out loud. Works best in Chrome.</p>
+  <div id="aiTopicPicker" style="display:flex;gap:10px;justify-content:center;margin-bottom:20px;flex-wrap:wrap;">
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="startAISession('debate')">🗣 Debate Practice</button>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="startAISession('interview')">💼 Interview Practice</button>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="startAISession('casual')">☕ Casual Conversation</button>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;" onclick="goTo('homeView')">← Back Home</button>
+  </div>
+  <div id="aiChatWrap" style="max-height:320px;overflow-y:auto;margin-bottom:14px;"></div>
+  <div id="aiStatusLine" style="text-align:center;color:#888;font-size:.9rem;margin-bottom:10px;"></div>
+  <div style="text-align:center;">
+    <button class="submit-btn" id="aiTalkBtn" style="display:none;max-width:260px;margin:0 auto;" onclick="aiListen()">🎤 Tap to Speak</button>
+  </div>
+</div>
+
+<!-- WORD CATCH GAME -->
+<div class="panel" id="catchSection">
+  <h2>Word Catch 🪄</h2>
+  <p class="sub">Type the correct word to fill the blank before it flies past. One miss ends the game!</p>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span style="font-weight:700;color:var(--green);">Score: <span id="catchScore">0</span></span>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;padding:8px 16px;font-size:.85rem;" onclick="goTo('homeView')">← Back Home</button>
+  </div>
+  <div id="catchSentence" style="text-align:center;font-size:1.15rem;font-weight:700;background:#f5fff7;border-radius:14px;padding:16px;margin-bottom:14px;">Get ready...</div>
+  <div id="catchArea" style="position:relative;height:340px;background:linear-gradient(180deg,#eaf7ff,#ffffff);border-radius:16px;overflow:hidden;border:2px solid #eee;"></div>
+  <div style="display:flex;gap:10px;margin-top:14px;">
+    <input type="text" id="catchInput" placeholder="Type the correct word and press Enter" autocomplete="off"
+      style="flex:1;padding:12px 14px;border:2px solid #ddd;border-radius:12px;font-size:1rem;outline:none;"
+      onkeydown="if(event.key==='Enter'){checkCatchAnswer();}"/>
+    <button class="btn btn-primary" style="background:var(--green);" onclick="checkCatchAnswer()">Go</button>
+  </div>
+  <div id="catchOverlay" style="display:none;text-align:center;margin-top:16px;">
+    <div style="font-size:2.5rem;">😅</div>
+    <p style="font-weight:800;font-size:1.2rem;margin:8px 0;">Game Over! Final Score: <span id="catchFinalScore">0</span></p>
+    <button class="submit-btn" style="max-width:220px;margin:0 auto;background:linear-gradient(135deg,var(--green),#27ae60);" onclick="startCatchGame()">Play Again</button>
+  </div>
+</div>
+
+<!-- FOREST RUN 3D GAME -->
+<div class="panel" id="runSection" style="max-width:720px;">
+  <h2>Forest Run 🏃🌲</h2>
+  <p class="sub">Type the full sentence shown before time runs out. 3 hearts — don't stumble!</p>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+    <span id="runHearts" style="font-size:1.3rem;">❤️❤️❤️</span>
+    <span style="font-weight:700;color:#2e7d32;">Score: <span id="runScore">0</span></span>
+    <button class="btn btn-outline" style="border-color:#ddd;color:#333;padding:8px 16px;font-size:.85rem;" onclick="goTo('homeView')">← Back Home</button>
+  </div>
+
+  <div id="runSentence" style="text-align:center;font-size:1.1rem;font-weight:700;background:#eaf7ee;border-radius:14px;padding:14px;margin-bottom:8px;min-height:30px;">Get ready...</div>
+  <div style="height:6px;background:#eee;border-radius:6px;overflow:hidden;margin-bottom:10px;">
+    <div id="runTimerBar" style="height:100%;width:100%;background:linear-gradient(90deg,#2e7d32,#8bc34a);transition:width linear;"></div>
+  </div>
+
+  <div style="position:relative;border-radius:16px;overflow:hidden;border:2px solid #ddd;">
+    <canvas id="runCanvas" style="display:block;width:100%;height:280px;"></canvas>
+    <div id="runOverlay" style="display:none;position:absolute;inset:0;background:rgba(0,0,0,.6);color:#fff;text-align:center;align-items:center;justify-content:center;flex-direction:column;">
+      <div style="font-size:2.5rem;">🌲😅</div>
+      <p style="font-weight:800;font-size:1.2rem;margin:8px 0;">Game Over! Sentences Completed: <span id="runFinalScore">0</span></p>
+      <button class="submit-btn" style="max-width:220px;background:linear-gradient(135deg,#2e7d32,#8bc34a);" onclick="startRunGame()">Play Again</button>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;margin-top:14px;">
+    <input type="text" id="runInput" placeholder="Type the full sentence and press Enter" autocomplete="off"
+      style="flex:1;padding:12px 14px;border:2px solid #ddd;border-radius:12px;font-size:1rem;outline:none;"
+      onkeydown="if(event.key==='Enter'){checkRunAnswer();}"/>
+    <button class="btn btn-primary" style="background:#2e7d32;" onclick="checkRunAnswer()">Go</button>
+  </div>
+</div>
+
+
+<footer>
+  <p>© 2026 <span>EasyTalk-Spoken</span> | Designed by <span>CodeNova</span> | Jehanabad, Bihar, India</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+emailjs.init("B_Tzj6bsqGCZC2p5t"); // existing EmailJS public key
+
+/* ---------- Question bank (easy, mixed grammar+vocab) ---------- */
+const BANK=[
+["Choose the correct sentence:",["She go to school.","She goes to school.","She going to school.","She gone to school."],1],
+["Opposite of 'Happy' is?",["Sad","Glad","Angry","Excited"],0],
+["Fill in the blank: I ___ a student.",["is","am","are","be"],1],
+["Which word means 'Beautiful'?",["Ugly","Pretty","Dirty","Boring"],1],
+["Past tense of 'Go' is?",["Goed","Gone","Went","Going"],2],
+["Choose the correct spelling:",["Recieve","Receive","Receeve","Receve"],1],
+["'Big' is the opposite of?",["Small","Tall","Wide","Long"],0],
+["Fill in the blank: They ___ playing football.",["is","am","are","be"],2],
+["Which is a fruit?",["Carrot","Potato","Mango","Onion"],2],
+["'He ___ to the market yesterday.'",["go","goes","went","going"],2],
+["'___ apple a day keeps doctor away.'",["A","An","The","No article"],1],
+["Plural of 'Child' is?",["Childs","Childes","Children","Childrens"],2],
+["Which word is a greeting?",["Goodbye","Hello","Sorry","Please"],1],
+["'I have ___ books.'",["much","many","little","less"],1],
+["Opposite of 'Fast' is?",["Quick","Slow","Rapid","Speedy"],1],
+["Choose the correct sentence:",["He don't like tea.","He doesn't likes tea.","He doesn't like tea.","He not like tea."],2],
+["Which is a color?",["Table","Blue","Chair","Book"],1],
+["'She is ___ than her sister.' (tall)",["tall","taller","tallest","more tall"],1],
+["Meaning of 'Quick'?",["Slow","Fast","Heavy","Light"],1],
+["'Where ___ you from?'",["is","am","are","be"],2],
+["Which day comes after Monday?",["Sunday","Wednesday","Tuesday","Friday"],2],
+["'I ___ my homework already.' (finish)",["finish","finished","finishing","finishes"],1],
+["Which word means 'Friend'?",["Enemy","Stranger","Buddy","Guest"],2],
+["One mouse, two ___",["Mouses","Mice","Mices","Mouse"],1],
+["'Can you ___ me?' (help)",["helps","helping","help","helped"],2],
+["Opposite of 'Open' is?",["Close","Start","Enter","Push"],0],
+["Which is a season?",["Monday","Summer","January","Morning"],1],
+["'They ___ watching a movie now.'",["is","was","are","were"],2],
+["Meaning of 'Angry'?",["Happy","Upset/Mad","Calm","Tired"],1],
+["'This is ___ book.' (my)",["me","my","I","mine is"],1],
+["Which is a body part?",["Table","Hand","Chair","Door"],1],
+["'Yesterday I ___ to the park.' (go)",["go","goes","went","going"],2],
+["Opposite of 'Old' is?",["Young/New","Big","Small","Tall"],0],
+["Which word means 'To Speak'?",["Listen","Talk","Write","Read"],1],
+["'She ___ a doctor.'",["is","am","are","be"],0],
+["Which is a number word?",["Red","Seven","Happy","Table"],1],
+["'We ___ friends since childhood.'",["is","am","are","was"],2],
+["Meaning of 'Difficult'?",["Easy","Hard","Simple","Quick"],1],
+["Which word is a question word?",["What","Table","Run","Blue"],0],
+["'He is good ___ football.'",["on","at","in","for"],1]
+];
+const PASS_MARK=16, TOTAL=30;
+let currentTest=[], answers={};
+
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function buildTest(){
+  const picked=shuffle(BANK).slice(0,TOTAL);
+  return picked.map(([q,opts,ansIdx])=>{
+    const idxs=shuffle(opts.map((_,i)=>i));
+    const newOpts=idxs.map(i=>opts[i]);
+    const newAns=idxs.indexOf(ansIdx);
+    return {q,opts:newOpts,ans:newAns};
+  });
+}
+function renderTest(){
+  const wrap=document.getElementById('questionsWrap');
+  wrap.innerHTML='';
+  currentTest.forEach((item,i)=>{
+    const block=document.createElement('div');
+    block.className='q-block';
+    block.innerHTML=`<p class="qtext">${i+1}. ${item.q}</p><div class="opt-row" id="opts-${i}"></div>`;
+    wrap.appendChild(block);
+    const optRow=block.querySelector(`#opts-${i}`);
+    item.opts.forEach((opt,oi)=>{
+      const b=document.createElement('button');
+      b.type='button';
+      b.className='opt-btn';
+      b.textContent=opt;
+      b.onclick=()=>{ answers[i]=oi; renderTest(); updateProgress(); };
+      if(answers[i]===oi) b.classList.add('selected');
+      optRow.appendChild(b);
+    });
+  });
+}
+function updateProgress(){
+  document.getElementById('testProgress').textContent=`${Object.keys(answers).length}/${TOTAL} answered`;
+}
+function submitTest(){
+  let score=0;
+  currentTest.forEach((item,i)=>{ if(answers[i]===item.ans) score++; });
+  window.lastScore = score+'/'+TOTAL;
+  showResult(score);
+}
+function showResult(score){
+  const icon=document.getElementById('resultIcon');
+  const title=document.getElementById('resultTitle');
+  const sub=document.getElementById('resultSub');
+  const btn=document.getElementById('resultBtn');
+  if(score>=PASS_MARK){
+    icon.textContent='🎉';
+    title.textContent='Congratulations, you passed!';
+    sub.textContent=`You scored ${score}/${TOTAL}. You're ready for admission!`;
+    btn.textContent='Provide Your Information for Admission';
+    btn.dataset.pass='1';
+  } else {
+    icon.textContent='💪';
+    title.textContent='Almost there!';
+    sub.textContent=`You scored ${score}/${TOTAL}. You need ${PASS_MARK}/${TOTAL} to pass. Try again with new questions!`;
+    btn.textContent='Retry Test (New Questions)';
+    btn.dataset.pass='0';
+  }
+  goTo('resultSection');
+}
+function handleResultBtn(){
+  const btn=document.getElementById('resultBtn');
+  if(btn.dataset.pass==='1'){ goTo('formSection'); }
+  else { startTest(); }
+}
+function startTest(){
+  currentTest=buildTest();
+  answers={};
+  renderTest();
+  updateProgress();
+  goTo('testSection');
+}
+function goTo(id){
+  document.getElementById('homeView').style.display = id==='homeView' ? 'block':'none';
+  ['testSection','resultSection','formSection','thankYouSection','gameSection','aiSection','catchSection','runSection'].forEach(s=>{
+    document.getElementById(s).classList.toggle('active', s===id);
+  });
+  if(id!=='aiSection') stopAISession();
+  if(id!=='catchSection') stopCatchGame();
+  if(id!=='runSection') stopRunGame();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* form submit */
+function submitForm(){
+  if(document.getElementById('fwebsite').value.trim()!=='') return; // honeypot
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const email=document.getElementById('femail').value.trim();
+  const course=document.getElementById('fcourse').value;
+  const consent=document.getElementById('fconsent').checked;
+  const el=document.getElementById('formMsg');
+  const phonePattern=/^[+]?[\d\s-]{10,15}$/;
+
+  if(!name || name.length<2){ el.style.color='red'; el.textContent='⚠️ Please enter a valid name.'; return; }
+  if(!phone || !phonePattern.test(phone)){ el.style.color='red'; el.textContent='⚠️ Please enter a valid phone number.'; return; }
+  if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ el.style.color='red'; el.textContent='⚠️ Please enter a valid email address.'; return; }
+  if(!course){ el.style.color='red'; el.textContent='⚠️ Please select a course.'; return; }
+  if(!consent){ el.style.color='red'; el.textContent='⚠️ Please agree to the privacy note to continue.'; return; }
+
+  el.style.color='#845EC2'; el.textContent='Sending...';
+
+  emailjs.send("service_rscl1qp","template_1mqzj0w",{
+    from_name:name,
+    from_email: email || 'Not provided',
+    phone:phone,
+    age: document.getElementById('fage').value.trim() || 'Not provided',
+    gender: document.getElementById('fgender').value || 'Not provided',
+    course:course,
+    batch: document.getElementById('fbatch').value || 'Not provided',
+    purpose: document.getElementById('fpurpose').value || 'Not provided',
+    ambition: document.getElementById('fambition').value.trim() || 'Not provided',
+    message: document.getElementById('fmsg').value.trim() || 'No message',
+    test_score: window.lastScore || 'Not recorded'
+  }).then(()=>{
+    document.getElementById('thankYouSub').textContent = `We've received ${name}'s details. Kundan Kumar will call ${phone} soon. Redirecting home...`;
+    goTo('thankYouSection');
+    setTimeout(()=>goTo('homeView'), 4000);
+  }).catch(()=>{
+    el.style.color='red';
+    el.textContent='❌ Failed to send. Please call us directly at +91 6204877079.';
+  });
+}
+/* ================= GAMES ================= */
+const FILL_BANK=[
+["I ___ to school every day.",["go","goes","going","gone"],0],
+["She ___ a beautiful song yesterday.",["sing","sang","sung","singing"],1],
+["They ___ playing cricket now.",["is","am","are","was"],2],
+["He ___ his homework already.",["finish","finished","finishing","finishes"],1],
+["We ___ friends since childhood.",["is","am","are","was"],2],
+["My mother ___ dinner every night.",["cook","cooks","cooking","cooked"],1],
+["Can you ___ me with this bag?",["helps","helping","help","helped"],2],
+["I have ___ apples in my bag.",["much","many","little","less"],1],
+["This is ___ book, not yours.",["me","my","I","mine is"],1],
+["She is ___ than her brother.",["tall","taller","tallest","more tall"],1],
+["Yesterday I ___ a movie.",["watch","watched","watching","watches"],1],
+["He is good ___ football.",["on","at","in","for"],1]
+];
+let quizPool=[], quizIdx=0, quizScore=0;
+let fillPool=[], fillIdx=0, fillScore=0;
+
+/* ================= SOUND EFFECTS (Web Audio, no files needed) ================= */
+let sfxCtx=null;
+function sfxInit(){ if(!sfxCtx){ sfxCtx = new (window.AudioContext||window.webkitAudioContext)(); } return sfxCtx; }
+function sfxTone(freq, dur, type='sine', vol=0.2, delay=0){
+  const ctx=sfxInit();
+  const o=ctx.createOscillator(), g=ctx.createGain();
+  o.type=type; o.frequency.value=freq;
+  g.gain.value=vol;
+  o.connect(g); g.connect(ctx.destination);
+  const t=ctx.currentTime+delay;
+  g.gain.setValueAtTime(vol, t);
+  g.gain.exponentialRampToValueAtTime(0.001, t+dur);
+  o.start(t); o.stop(t+dur);
+}
+function sfxStart(){ sfxTone(440,0.12,'triangle',0.25); sfxTone(660,0.15,'triangle',0.2,0.1); }
+function sfxCorrect(){ sfxTone(523,0.1,'sine',0.25); sfxTone(784,0.15,'sine',0.25,0.09); }
+function sfxWrong(){ sfxTone(220,0.18,'sawtooth',0.2); sfxTone(140,0.22,'sawtooth',0.2,0.1); }
+let sfxFootstepInterval=null;
+function sfxFootstepsStart(){
+  if(sfxFootstepInterval) return;
+  sfxFootstepInterval = setInterval(()=>{ sfxTone(90,0.06,'square',0.08); }, 380);
+}
+function sfxFootstepsStop(){ if(sfxFootstepInterval){ clearInterval(sfxFootstepInterval); sfxFootstepInterval=null; } }
+
+function startQuizGame(){
+  sfxStart();
+  quizPool=buildTest().slice(0,10); // reuse admission-test bank, shuffled
+  quizIdx=0; quizScore=0;
+  document.getElementById('gameScoreLine').textContent=`Score: 0`;
+  renderQuizGameQ();
+}
+function renderQuizGameQ(){
+  const wrap=document.getElementById('gameWrap');
+  if(quizIdx>=quizPool.length){
+    wrap.innerHTML=`<p style="text-align:center;font-weight:700;">🎉 Round over! Final score: ${quizScore}/${quizPool.length}</p>`;
+    return;
+  }
+  const item=quizPool[quizIdx];
+  wrap.innerHTML=`<div class="q-block"><p class="qtext">${quizIdx+1}. ${item.q}</p><div class="opt-row" id="qg-opts"></div><p id="qg-feedback" style="margin-top:8px;font-weight:700;"></p></div>`;
+  const row=document.getElementById('qg-opts');
+  item.opts.forEach((opt,oi)=>{
+    const b=document.createElement('button');
+    b.className='opt-btn'; b.textContent=opt;
+    b.onclick=()=>{
+      const fb=document.getElementById('qg-feedback');
+      if(oi===item.ans){ fb.style.color='green'; fb.textContent='✅ Correct!'; quizScore++; sfxCorrect(); }
+      else { fb.style.color='red'; fb.textContent='❌ Not quite - correct answer: '+item.opts[item.ans]; sfxWrong(); }
+      document.getElementById('gameScoreLine').textContent=`Score: ${quizScore}`;
+      Array.from(row.children).forEach(c=>c.disabled=true);
+      setTimeout(()=>{ quizIdx++; renderQuizGameQ(); },900);
+    };
+    row.appendChild(b);
+  });
+}
+
+function startFillGame(){
+  sfxStart();
+  fillPool=shuffle(FILL_BANK).slice(0,10);
+  fillIdx=0; fillScore=0;
+  document.getElementById('gameScoreLine').textContent=`Score: 0`;
+  renderFillGameQ();
+}
+function renderFillGameQ(){
+  const wrap=document.getElementById('gameWrap');
+  if(fillIdx>=fillPool.length){
+    wrap.innerHTML=`<p style="text-align:center;font-weight:700;">🎉 Round over! Final score: ${fillScore}/${fillPool.length}</p>`;
+    return;
+  }
+  const [q,opts,ansIdx]=fillPool[fillIdx];
+  const idxs=shuffle(opts.map((_,i)=>i));
+  const shownOpts=idxs.map(i=>opts[i]);
+  const correctIdx=idxs.indexOf(ansIdx);
+  wrap.innerHTML=`<div class="q-block"><p class="qtext">${fillIdx+1}. ${q}</p><div class="opt-row" id="fg-opts"></div><p id="fg-feedback" style="margin-top:8px;font-weight:700;"></p></div>`;
+  const row=document.getElementById('fg-opts');
+  shownOpts.forEach((opt,oi)=>{
+    const b=document.createElement('button');
+    b.className='opt-btn'; b.textContent=opt;
+    b.onclick=()=>{
+      const fb=document.getElementById('fg-feedback');
+      if(oi===correctIdx){ fb.style.color='green'; fb.textContent='✅ Correct!'; fillScore++; sfxCorrect(); }
+      else { fb.style.color='red'; fb.textContent='❌ Correct answer: '+shownOpts[correctIdx]; sfxWrong(); }
+      document.getElementById('gameScoreLine').textContent=`Score: ${fillScore}`;
+      Array.from(row.children).forEach(c=>c.disabled=true);
+      setTimeout(()=>{ fillIdx++; renderFillGameQ(); },900);
+    };
+    row.appendChild(b);
+  });
+}
+
+/* ================= AI SPEAKING PARTNER ================= */
+const AI_SCRIPTS={
+  debate:{
+    opener:"Let's debate! Topic: Should students use mobile phones in school? Please share your opening view.",
+    followups:[
+      "Interesting point. Now, what would you say to someone who disagrees with you?",
+      "Good. Can you give one more reason to support your side?",
+      "Nice argument. How would you respond if someone said phones are distracting?",
+      "That's a strong point. Let's wrap up - summarize your final position in one sentence."
+    ]
+  },
+  interview:{
+    opener:"Welcome to your mock interview. First question: Can you tell me about yourself?",
+    followups:[
+      "Thank you. Next question: what is your biggest strength?",
+      "Good answer. Why do you want this job?",
+      "I see. Where do you see yourself in five years?",
+      "Great. Last question: do you have any questions for me?"
+    ]
+  },
+  casual:{
+    opener:"Hi! Let's just chat. How was your day today?",
+    followups:[
+      "That's nice. What do you usually do in your free time?",
+      "Sounds fun. What is your favorite food?",
+      "I like that too. Do you enjoy watching movies?",
+      "Great talking with you. What are you looking forward to this week?"
+    ]
+  }
+};
+let aiFemaleVoice=null;
+let aiTurn=0, aiScript=null, aiRecognition=null, aiListening=false;
+
+function pickFemaleVoice(){
+  const voices=window.speechSynthesis.getVoices();
+  aiFemaleVoice = voices.find(v=>/female/i.test(v.name)) ||
+                  voices.find(v=>/Google UK English Female|Zira|Samantha/i.test(v.name)) ||
+                  voices.find(v=>v.lang==='en-US') || voices[0];
+}
+if('speechSynthesis' in window){
+  window.speechSynthesis.onvoiceschanged = pickFemaleVoice;
+  pickFemaleVoice();
+}
+
+function aiSpeak(text, cb){
+  document.getElementById('aiChatWrap').innerHTML += `<p style="background:#f5f0ff;border-radius:12px;padding:10px 14px;margin-bottom:8px;"><strong>AI:</strong> ${text}</p>`;
+  document.getElementById('aiChatWrap').scrollTop = 999999;
+  if(!('speechSynthesis' in window)){ if(cb) cb(); return; }
+  const utter = new SpeechSynthesisUtterance(text);
+  if(aiFemaleVoice) utter.voice = aiFemaleVoice;
+  utter.rate = 0.95;
+  utter.onend = ()=>{ if(cb) cb(); };
+  window.speechSynthesis.speak(utter);
+}
+
+function startAISession(topic){
+  aiScript = AI_SCRIPTS[topic];
+  aiTurn = 0;
+  document.getElementById('aiChatWrap').innerHTML='';
+  document.getElementById('aiTopicPicker').style.display='none';
+  document.getElementById('aiTalkBtn').style.display='inline-block';
+  document.getElementById('aiStatusLine').textContent='';
+  aiSpeak(aiScript.opener, ()=>{
+    document.getElementById('aiStatusLine').textContent='Tap the mic and speak your answer.';
+  });
+}
+
+function aiListen(){
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){
+    document.getElementById('aiStatusLine').textContent='⚠️ Voice input not supported in this browser. Please use Chrome.';
+    return;
+  }
+  if(aiListening) return;
+  aiListening = true;
+  document.getElementById('aiStatusLine').textContent='🎙️ Listening... speak now.';
+  aiRecognition = new SR();
+  aiRecognition.lang = 'en-US';
+  aiRecognition.interimResults = true;
+  aiRecognition.maxAlternatives = 1;
+
+  aiRecognition.onresult = (e)=>{
+    const result = e.results[0];
+    if(!result.isFinal) return;
+    const transcript = result[0].transcript;
+    document.getElementById('aiChatWrap').innerHTML += `<p style="background:#eef7ee;border-radius:12px;padding:10px 14px;margin-bottom:8px;"><strong>You:</strong> ${transcript}</p>`;
+    document.getElementById('aiChatWrap').scrollTop = 999999;
+    aiListening = false;
+    respondNext();
+  };
+  aiRecognition.onerror = (e)=>{
+    aiListening = false;
+    const msgs = {
+      'no-speech': '⚠️ No speech detected. Tap mic and speak right away.',
+      'not-allowed': '⚠️ Microphone blocked. Check site settings and allow mic access.',
+      'audio-capture': '⚠️ No microphone found on this device.',
+      'network': '⚠️ Network issue - check your internet connection.'
+    };
+    document.getElementById('aiStatusLine').textContent = msgs[e.error] || ('⚠️ Error: '+e.error+'. Tap mic to retry.');
+  };
+  aiRecognition.onend = ()=>{ aiListening=false; };
+  aiRecognition.start();
+}
+
+function respondNext(){
+  if(aiTurn < aiScript.followups.length){
+    const line = aiScript.followups[aiTurn];
+    aiTurn++;
+    aiSpeak(line, ()=>{
+      document.getElementById('aiStatusLine').textContent='Tap the mic and speak your answer.';
+    });
+  } else {
+    aiSpeak("Great session! You're building real speaking confidence. Tap Back Home to try another topic.", ()=>{
+      document.getElementById('aiStatusLine').textContent='Session complete 🎉';
+      document.getElementById('aiTalkBtn').style.display='none';
+    });
+  }
+}
+
+function stopAISession(){
+  if(aiRecognition && aiListening){ try{ aiRecognition.stop(); }catch(e){} }
+  aiListening=false;
+  window.speechSynthesis && window.speechSynthesis.cancel();
+  document.getElementById('aiTopicPicker').style.display='flex';
+  document.getElementById('aiTalkBtn').style.display='none';
+}
+
+/* ================= WORD CATCH GAME ================= */
+const CATCH_BANK=[
+["Where ___ you going?",["are","is","am","was"],0],
+["He ___ a good singer.",["are","am","is","were"],2],
+["I ___ very happy today.",["is","am","are","was"],1],
+["They ___ finished their homework.",["has","have","is","was"],1],
+["She ___ to school every day.",["go","goes","going","gone"],1],
+["We ___ friends since childhood.",["is","am","are","was"],2],
+["___ book is this?",["Who","Whose","Who's","Which one"],1],
+["He ___ his lunch already.",["eat","ate","eating","eats"],1],
+["Can you ___ me with this?",["helps","helping","help","helped"],2],
+["My father ___ a teacher.",["are","is","am","were"],1],
+["I ___ two brothers.",["has","have","having","had"],1],
+["She is ___ than me.",["tall","taller","tallest","more tall"],1],
+["___ do you live?",["What","Where","Why","Which"],1],
+["He ___ playing football now.",["is","am","are","was"],0],
+["We ___ to the market yesterday.",["go","goes","went","going"],2],
+["This is ___ pen, not yours.",["me","my","I","mine is"],1],
+["___ is my favorite subject.",["English","An english","The English","englisH"],0],
+["I ___ never been to Delhi.",["have","has","having","had"],0],
+["He ___ not like tea.",["do","does","did","doing"],1],
+["___ they coming to the party?",["Is","Am","Are","Was"],2]
+];
+const COMMON_WORDS=["is","are","am","was","were","have","has","had","his","her","do","does","did","go","goes","went","the","a","an","who","what","where"];
+
+let catchScore=0, catchWords=[], catchActive=false, catchTimer=null, catchCorrectWord='';
+
+function startCatchGame(){
+  sfxStart();
+  catchScore=0;
+  document.getElementById('catchScore').textContent='0';
+  document.getElementById('catchOverlay').style.display='none';
+  document.getElementById('catchArea').innerHTML='';
+  document.getElementById('catchInput').value='';
+  catchActive=true;
+  nextCatchRound();
+  setTimeout(()=>document.getElementById('catchInput').focus(),300);
+}
+function stopCatchGame(){
+  catchActive=false;
+  if(catchTimer) clearTimeout(catchTimer);
+  document.getElementById('catchArea') && (document.getElementById('catchArea').innerHTML='');
+}
+function nextCatchRound(){
+  if(!catchActive) return;
+  const area=document.getElementById('catchArea');
+  area.innerHTML='';
+  document.getElementById('catchInput').value='';
+  const [sentence, opts, ansIdx] = CATCH_BANK[Math.floor(Math.random()*CATCH_BANK.length)];
+  catchCorrectWord = opts[ansIdx];
+  document.getElementById('catchSentence').textContent = sentence;
+
+  let decoys = shuffle(COMMON_WORDS.filter(w=>w.toLowerCase()!==catchCorrectWord.toLowerCase())).slice(0,3);
+  let words = shuffle([catchCorrectWord, ...decoys]);
+
+  const duration = Math.max(3, 7 - catchScore*0.25); // gets faster as score rises
+  const areaWidth = area.clientWidth || 300;
+  const lanes = shuffle([0,1,2,3]);
+
+  words.forEach((word, i)=>{
+    const el = document.createElement('div');
+    el.className='flying-word';
+    el.textContent = word;
+    const lane = lanes[i];
+    const laneWidth = areaWidth / 4;
+    el.style.left = (lane*laneWidth + laneWidth*0.15) + 'px';
+    el.style.animationDuration = duration + 's';
+    el.style.animationDelay = (i*0.3) + 's';
+    const isCorrect = word.toLowerCase()===catchCorrectWord.toLowerCase();
+    el.addEventListener('animationend', ()=>{
+      if(isCorrect && catchActive && el.parentNode){
+        sfxWrong();
+        endCatchGame();
+      } else if(el.parentNode){
+        el.remove();
+      }
+    });
+    area.appendChild(el);
+  });
+}
+function checkCatchAnswer(){
+  if(!catchActive) return;
+  const input = document.getElementById('catchInput');
+  const typed = input.value.trim().toLowerCase();
+  input.value='';
+  if(!typed) return;
+  if(typed === catchCorrectWord.toLowerCase()){
+    catchScore++;
+    document.getElementById('catchScore').textContent = catchScore;
+    sfxCorrect();
+    nextCatchRound();
+  } else {
+    sfxWrong();
+    endCatchGame();
+  }
+}
+function endCatchGame(){
+  catchActive=false;
+  document.getElementById('catchArea').innerHTML='';
+  document.getElementById('catchFinalScore').textContent = catchScore;
+  document.getElementById('catchOverlay').style.display='block';
+}
+
+/* ================= FOREST RUN (3D via Three.js) ================= */
+const RUN_SENTENCES=[
+"sun","tree","river","bird","rain","forest","flower","wind","moon","leaf",
+"grass","sky","cloud","mountain","lake","stone","earth","seed","branch","root"
+];
+const RUN_ROUND_TIME = 9; // seconds
+
+let runScene, runCamera, runRenderer, runCharacter, runTrees=[], runDashes=[];
+let runActive=false, runHearts=3, runScore=0, runSpeed=6, runCurrentSentence='';
+let runClock=null, runTimerInterval=null, runAnimId=null, runLastT=0;
+
+function initRunThree(){
+  const canvas = document.getElementById('runCanvas');
+  const w = canvas.clientWidth, h = 280;
+  canvas.width = w; canvas.height = h;
+
+  runScene = new THREE.Scene();
+  runScene.background = new THREE.Color(0x9fd8ff);
+  runScene.fog = new THREE.Fog(0x9fd8ff, 15, 55);
+
+  runCamera = new THREE.PerspectiveCamera(60, w/h, 0.1, 200);
+  runCamera.position.set(0, 3.2, 7);
+  runCamera.lookAt(0, 1.2, -10);
+
+  runRenderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
+  runRenderer.setSize(w, h, false);
+
+  const hemi = new THREE.HemisphereLight(0xffffff, 0x4d7a2f, 1.0);
+  runScene.add(hemi);
+  const sun = new THREE.DirectionalLight(0xffffff, 0.6);
+  sun.position.set(5,10,5);
+  runScene.add(sun);
+
+  // ground: grass + darker path strip
+  const grass = new THREE.Mesh(new THREE.PlaneGeometry(30, 200), new THREE.MeshLambertMaterial({color:0x6fae3e}));
+  grass.rotation.x = -Math.PI/2; grass.position.y=0; grass.position.z=-60;
+  runScene.add(grass);
+  const path = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 200), new THREE.MeshLambertMaterial({color:0xC8A76A}));
+  path.rotation.x = -Math.PI/2; path.position.y=0.01; path.position.z=-60;
+  runScene.add(path);
+
+  // speed-line dashes on the path (recycled to show motion)
+  runDashes = [];
+  for(let i=0;i<10;i++){
+    const dash = new THREE.Mesh(new THREE.PlaneGeometry(0.4,1.2), new THREE.MeshBasicMaterial({color:0xffffff, transparent:true, opacity:0.5}));
+    dash.rotation.x = -Math.PI/2;
+    dash.position.set(0, 0.02, -i*6);
+    runScene.add(dash);
+    runDashes.push(dash);
+  }
+
+  // trees along both sides (recycled)
+  runTrees = [];
+  for(let i=0;i<16;i++){
+    const side = i%2===0 ? -1 : 1;
+    const tree = makeTree();
+    tree.position.set(side*(2.3+Math.random()*2), 0, -i*7 - Math.random()*3);
+    runScene.add(tree);
+    runTrees.push(tree);
+  }
+
+  // character: simple low-poly runner
+  runCharacter = makeCharacter();
+  runCharacter.position.set(0,0,0);
+  runScene.add(runCharacter);
+}
+
+function makeTree(){
+  const g = new THREE.Group();
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.2,1.4,6), new THREE.MeshLambertMaterial({color:0x6b4423}));
+  trunk.position.y = 0.7;
+  g.add(trunk);
+  const leafColors=[0x2e7d32,0x388e3c,0x43a047];
+  for(let i=0;i<3;i++){
+    const leaf = new THREE.Mesh(new THREE.ConeGeometry(0.9-i*0.2, 1.1, 7), new THREE.MeshLambertMaterial({color:leafColors[i%3]}));
+    leaf.position.y = 1.5 + i*0.7;
+    g.add(leaf);
+  }
+  return g;
+}
+function makeCharacter(){
+  const g = new THREE.Group();
+  const skin = new THREE.MeshLambertMaterial({color:0xffcc99});
+  const shirt = new THREE.MeshLambertMaterial({color:0xff6b35});
+  const pants = new THREE.MeshLambertMaterial({color:0x2b2b45});
+
+  const body = new THREE.Mesh(new THREE.BoxGeometry(0.55,0.7,0.3), shirt);
+  body.position.y = 1.1;
+  g.add(body);
+
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.28,10,10), skin);
+  head.position.y = 1.7;
+  g.add(head);
+
+  const legL = new THREE.Mesh(new THREE.BoxGeometry(0.2,0.7,0.2), pants);
+  legL.position.set(-0.15, 0.4, 0); legL.name='legL';
+  g.add(legL);
+  const legR = new THREE.Mesh(new THREE.BoxGeometry(0.2,0.7,0.2), pants);
+  legR.position.set(0.15, 0.4, 0); legR.name='legR';
+  g.add(legR);
+
+  const armL = new THREE.Mesh(new THREE.BoxGeometry(0.16,0.6,0.16), skin);
+  armL.position.set(-0.4, 1.15, 0); armL.name='armL';
+  g.add(armL);
+  const armR = new THREE.Mesh(new THREE.BoxGeometry(0.16,0.6,0.16), skin);
+  armR.position.set(0.4, 1.15, 0); armR.name='armR';
+  g.add(armR);
+
+  return g;
+}
+
+function runAnimate(t){
+  if(!runActive){ return; }
+  if(!runLastT) runLastT = t;
+  const dt = Math.min((t-runLastT)/1000, 0.05);
+  runLastT = t;
+
+  const speed = runSpeed;
+  // move trees & dashes toward camera to simulate running forward
+  runTrees.forEach(tree=>{
+    tree.position.z += speed*dt;
+    if(tree.position.z > 8){ tree.position.z -= 16*7; }
+  });
+  runDashes.forEach(dash=>{
+    dash.position.z += speed*dt;
+    if(dash.position.z > 8){ dash.position.z -= 60; }
+  });
+
+  // running animation: bob + leg/arm swing
+  const runT = t/1000 * (speed/2);
+  runCharacter.position.y = Math.abs(Math.sin(runT*6))*0.08;
+  const legL = runCharacter.getObjectByName('legL');
+  const legR = runCharacter.getObjectByName('legR');
+  const armL = runCharacter.getObjectByName('armL');
+  const armR = runCharacter.getObjectByName('armR');
+  if(legL) legL.rotation.x = Math.sin(runT*6)*0.7;
+  if(legR) legR.rotation.x = -Math.sin(runT*6)*0.7;
+  if(armL) armL.rotation.x = -Math.sin(runT*6)*0.6;
+  if(armR) armR.rotation.x = Math.sin(runT*6)*0.6;
+
+  // subtle lateral weave for visual variety (nature path curve feel)
+  runCharacter.position.x = Math.sin(t/1400)*0.5;
+  runCamera.position.x = runCharacter.position.x*0.6;
+  runCamera.lookAt(runCharacter.position.x*0.6, 1.2, -10);
+
+  runRenderer.render(runScene, runCamera);
+  runAnimId = requestAnimationFrame(runAnimate);
+}
+
+function startRunGame(){
+  sfxStart();
+  const canvas = document.getElementById('runCanvas');
+  if(!runRenderer){ initRunThree(); }
+  document.getElementById('runOverlay').style.display='none';
+  runHearts=3; runScore=0; runSpeed=6;
+  updateRunHearts();
+  document.getElementById('runScore').textContent='0';
+  runActive=true;
+  runLastT=0;
+  if(runAnimId) cancelAnimationFrame(runAnimId);
+  runAnimId = requestAnimationFrame(runAnimate);
+  sfxFootstepsStart();
+  nextRunSentence();
+}
+function stopRunGame(){
+  runActive=false;
+  if(runAnimId) cancelAnimationFrame(runAnimId);
+  if(runTimerInterval) clearInterval(runTimerInterval);
+  sfxFootstepsStop();
+}
+function updateRunHearts(){
+  document.getElementById('runHearts').textContent = '❤️'.repeat(runHearts) + '🤍'.repeat(3-runHearts);
+}
+function nextRunSentence(){
+  if(!runActive) return;
+  let s;
+  do{ s = RUN_SENTENCES[Math.floor(Math.random()*RUN_SENTENCES.length)]; } while(s===runCurrentSentence);
+  runCurrentSentence = s;
+  document.getElementById('runSentence').textContent = s;
+  document.getElementById('runInput').value='';
+  document.getElementById('runInput').focus();
+
+  const bar = document.getElementById('runTimerBar');
+  bar.style.transition='none';
+  bar.style.width='100%';
+  requestAnimationFrame(()=>{
+    bar.style.transition=`width ${RUN_ROUND_TIME}s linear`;
+    bar.style.width='0%';
+  });
+
+  if(runTimerInterval) clearTimeout(runTimerInterval);
+  runTimerInterval = setTimeout(()=>{
+    if(runActive) runMistake();
+  }, RUN_ROUND_TIME*1000);
+}
+function checkRunAnswer(){
+  if(!runActive) return;
+  const input = document.getElementById('runInput');
+  const typed = input.value.trim().replace(/\s+/g,' ').toLowerCase();
+  const target = runCurrentSentence.trim().replace(/\s+/g,' ').toLowerCase();
+  if(!typed) return;
+  clearTimeout(runTimerInterval);
+  if(typed === target){
+    runScore++;
+    runSpeed = Math.min(runSpeed + 0.6, 14);
+    document.getElementById('runScore').textContent = runScore;
+    sfxCorrect();
+    nextRunSentence();
+  } else {
+    runMistake();
+  }
+}
+function runMistake(){
+  sfxWrong();
+  runHearts--;
+  updateRunHearts();
+  if(runHearts<=0){ runGameOver(); }
+  else { nextRunSentence(); }
+}
+function runGameOver(){
+  runActive=false;
+  clearTimeout(runTimerInterval);
+  sfxFootstepsStop();
+  document.getElementById('runFinalScore').textContent = runScore;
+  document.getElementById('runOverlay').style.display='flex';
+}
+</script>
+</body>
+</html>
